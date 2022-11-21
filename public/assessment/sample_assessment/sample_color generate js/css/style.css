@@ -1,0 +1,23 @@
+.bt1{
+    margin-bottom: 20px;
+  
+    
+    }
+    
+
+    .container{
+        margin-top: 50px;
+    }
+
+    .box{
+    
+        width: 100%;
+        height: 50%;
+        float: right;
+        text-align: center;
+    }
+    
+    #bt2{
+        float: right;
+        text-align: center;
+    }

@@ -1,0 +1,70 @@
+@mixin navi {
+    background-color: $primary-color;
+}
+
+@mixin color {
+    color: $color;
+   //  text-transform: uppercase;
+}
+
+@mixin cards {
+    color:$card-color;
+    background-color: $cardbody;
+    width: 35rem;
+    margin-bottom: 10px;
+}
+
+@mixin a-button {
+
+       background-color: rgb(81, 123, 80);
+       color: white;
+       
+       &:hover {
+          color: rgb(177, 151, 151);
+       }
+ 
+       &:visited {
+          color: green;
+       }
+    }
+ 
+ 
+ @mixin a-link {
+    
+    //    background-color: rgb(0, 34, 12);
+       color: white;
+       
+       &:hover {
+          color: red;
+       }
+ 
+       &:visited {
+          color: rgb(224, 0, 254);
+       }
+    }
+
+    @mixin linearBgImage($image) {
+        background-image: linear-gradient(
+            to right bottom, rgba(17, 111, 21, 0.8), 
+            rgba(240, 180, 131, 0.8)), 
+            url($image);
+    }
+
+
+    @mixin icons1 {
+        border: 1px solid black;
+        // color: aqua;
+        font-size: 30px;
+        fill: aqua;
+    }
+
+     // @include linearBgImage("https://images.unsplash.com/photo-1656546543427-46d17b70a149?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80");
+    
+ @mixin control {
+   border: 5px solid rgb(26, 26, 26);
+   border-radius: 10px;
+   // border-bottom: none;
+   text-transform: capitalize;
+   text-shadow: 2px;
+   box-shadow: 5px 10px 10px 20px;
+}

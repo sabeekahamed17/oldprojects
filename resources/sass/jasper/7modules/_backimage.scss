@@ -1,0 +1,31 @@
+.backimage{
+    position: absolute;
+    left: -500px;
+    top: 800px;
+    right: auto;
+    bottom: auto;
+    z-index: 0;
+    opacity: .2;
+}
+
+.bg-video{
+    position: sticky;
+    top: 80px;
+    z-index: 10;
+    overflow: visible;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+
+.video-demo{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 160vh;
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+

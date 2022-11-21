@@ -1,0 +1,7 @@
+.alert{
+    background-color: alert-col("primary");
+}
+
+.alert-success1{
+    background-color:map-get($alert-col, "success" );
+}

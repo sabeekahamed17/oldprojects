@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colours</title>
+<link rel="stylesheet" href="./gen.css">
+  
+  <link rel="stylesheet" href="../assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+
+<!-- <body style="background-color: rgb(5, 235, 139);"> -->
+<div class="container">
+  <div class="row">
+  <div class="col-lg-12">  
+    <div class="col-lg-12">
+        <button type="button" id="btn1" class="btn btn-success bt1">Generate</button>
+        <span class="box" style="background: rgb(250, 233, 2);">GENERATE COLOR</span>
+    </div>
+    <br>
+    <table class="table table-bordered">
+        <th scope="row" class="d-flex justify-content-center">
+    <button type="button" class="btn btn-success bt2" id="sadd">Add</button>
+    <button type="button" class="btn btn-danger bt3" id="sremove">Remove</button>
+   </th>
+     </table>
+    <ul class="u1">
+    </ul>
+    <div class="col-lg-6 newL">
+      <div class="div3" >
+        <ul id="u5">
+        </ul>
+      </div>    
+     </div>
+    <table class="table table-bordered">
+        <th scope="row" class="d-flex justify-content-center">
+  <div>
+    <button type="button" class="btn btn-success bt2" id="dadd">Add</button>
+    <button type="button" class="btn btn-danger bt3" id="dremove">Remove</button>
+  </div>
+</th>
+</table>
+<br>
+<table class="table table-bordered">
+    <th scope="row" class="d-flex justify-content-center">
+  <div >
+    <button type="button" class="btn btn-danger bt2" id="btn2">Red sort</button>
+    <button type="button" class="btn btn-success bt3" id="btn3">Green sort</button>
+    <button type="button" class="btn btn-info bt4" id="btn4">Blue sort</button>
+  </div>
+</th>
+</table>
+<div class="container">
+    <div scope="row" class="d-flex">
+             <button type="button" class="btn btn-danger bt5" id="btn5">Copy List</button>
+             <label>Start :</label>
+             <input type="number">
+             <label>End :</label>
+             <input type="number">
+         </div>
+         <br>
+         <div scope="row" class="d-flex center">
+             <button type="button" class="btn btn-danger" id="btn6">Move List</button>
+             <label>Start :</label>
+             <input type="number" id="myinput">
+             <label>End :</label>
+             <input type="number">
+    </div>
+    </div>
+   <script type="text/javascript" src="./gen.js"></script>
+
+</body>
+</html>
+
+
+
+
+<!--  <div class="container">
+            <div class="col-lg-6">
+                <div>
+                  <button type="button" id="btn1" class="btn btn-success bt1">Generate</button>
+                  <span class="box" style="background: rgb(36, 119, 202);">GENERATE COLOR</span>
+                </div><hr>
+               
+
+            <br>
+            
+            
+                <table class="table table-bordered">
+                    <th scope="row" class="d-flex justify-content-center">
+              <div>
+                  <button type="button" class="btn btn-success bt2" id="sadd">Add</button>
+                  <button type="button" class="btn btn-danger bt3" id="sremove">Remove</button>
+                </th>
+                <!-- </table> 
+                
+                
+                <table class="table table-bordered">
+                    <th scope="row" class="d-flex justify-content-center">
+                <div>
+                <button type="button" class="btn btn-success">Add</button>
+                <button type="button" class="btn btn-danger">Remove</button>
+                </th>
+                </div
+                </table>
+                
+                <table class="table table-bordered">
+                    <th scope="row" class="d-flex justify-content-center">
+                <div>
+                <button type="button" class="btn btn-success">Red shot</button>
+                <button type="button" class="btn btn-danger">Green shot</button>
+                <button type="button" class="btn btn-info">Blue shot</button>
+                </th>
+                </table>
+
+                <hr>
+                
+            </div>
+        </div>
+           <div class="container">
+       <div scope="row" class="d-flex">
+                <button type="button" class="btn btn-danger">Copy List</button>
+                <label>Start :</label>
+                <input type="text">
+                <label>End :</label>
+                <input type="text">
+            </div>
+            <br>
+            <div scope="row" class="d-flex center">
+                <button type="button" class="btn btn-danger">Move List</button>
+                <label>Start :</label>
+                <input type="text">
+                <label>End :</label>
+                <input type="text">
+            </div>
+            </div>
+           
+    
+    <!-- <div class="row">
+        <div class="container">
+
+        <div class="col-lg-12">  
+      
+          <div class="col-lg-6">
+    <button class="bt1">Change</button><br>
+       <h1 class="box">Generate Color</h1>
+       <button type="button" class="btn btn-success">Success</button>
+       <br>
+          </div>
+          <button class="bt2" id="sadd">Add</button>
+          <button class="bt3" id="sremove">Remove</button><br>     
+        <ul class="u1">
+             </ul>
+          <div class="col-lg-6 newL">
+         <div class="div3" >
+          <ul id="u5">
+       </ul>
+       </div>   
+     </div>
+          <hr>
+           <div >
+      
+          <button class="bt2" id="dadd" >Add</button>
+      
+          <button class="bt3" id="dremove">Remove</button><br>
+      
+        </div>
+      
+        <div >
+      
+          <button class="bt2" id="btn2">Red Sort</button>
+      
+          <button class="bt3" id="btn3">Green Sort</button>
+      
+          <button class="bt4" id="btn4">Blue Sort</button><br>
+      
+          </div>
+      
+          <div >
+      
+            <button class="bt5" id="btn5">Copy List</button>
+      
+            <label>Start</label>
+      
+            <input type="text" id="myinput">
+      
+            <label>End</label>
+      
+            <input type="text" id="myin"><br>
+      
+          <button class="bt6" id="btn6">Move List</button>
+      
+          <label>Start</label>
+      
+          <input type="text" id="in">
+      
+          <label>End</label>
+      
+          <input type="text" id="inn"><br><br>
+      
+        </div>
+      
+      </div>
+      
+          <div class="col-lg-6">
+      
+         <div class="div3" >
+      
+           <ul id="u5">
+      
+      
+      
+           </ul>
+      
+         </div>    
+      
+          
+      
+        </div>
+      
+    </div>
+      
+      
+      
+      </div>
+    
+    <script src="../assets/javaScript/script.js"></script>
+</body>
+</html>  -->
+
+<!-- <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Colours</title>
+
+  
+
+   CSS only
+
+  <link rel="stylesheet" href="../assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+  <div class="row">
+
+  <div class="col-lg-12">  
+
+    <div class="col-lg-6">
+
+     
+
+      <button class="bt1">Change</button><br>
+
+      <h1 class="box">Generate Color</h1><br>
+
+    </div>
+
+    
+
+   
+
+    <button class="bt2" id="sadd">Add</button>
+
+    <button class="bt3" id="sremove">Remove</button><br>
+
+    <ul class="u1">
+
+       
+
+    </ul>
+
+    <div class="col-lg-6 newL">
+
+      <div class="div3" >
+
+        <ul id="u5">
+
+    
+
+        </ul>
+
+      </div>    
+
+       
+
+     </div>
+
+    <hr>
+
+  <div >
+
+    <button class="bt2" id="dadd" >Add</button>
+
+    <button class="bt3" id="dremove">Remove</button><br>
+
+  </div>
+
+  <div >
+
+    <button class="bt2" id="btn2">Red Sort</button>
+
+    <button class="bt3" id="btn3">Green Sort</button>
+
+    <button class="bt4" id="btn4">Blue Sort</button><br>
+
+    </div>
+
+    <div >
+
+      <button class="bt5" id="btn5">Copy List</button>
+
+      <label>Start</label>
+
+      <input type="text" id="myinput">
+
+      <label>End</label>
+
+      <input type="text" id="myin"><br>
+
+    <button class="bt6" id="btn6">Move List</button>
+
+    <label>Start</label>
+
+    <input type="text" id="in">
+
+    <label>End</label>
+
+    <input type="text" id="inn"><br><br>
+
+  </div>
+
+</div>
+
+    <div class="col-lg-6">
+
+   <div class="div3" >
+
+     <ul id="u5">
+
+
+
+     </ul>
+
+   </div>    
+
+    
+
+  </div>
+
+
+
+
+
+</div>-->

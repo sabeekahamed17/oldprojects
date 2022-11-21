@@ -1,0 +1,35 @@
+html{
+    scroll-behavior: smooth;
+}
+#home{
+     /* background: #333; */
+     color: #fff;
+     scroll-behavior: smooth;
+     
+ }
+ .navbar{
+     border-bottom:3px solid #008ed6 ;
+     /* opacity: 0.8; */
+ }
+
+ #home-section{
+     background-image: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80);
+     background-size: cover;
+     background-attachment: fixed;
+     min-height: 700px;
+     
+ }
+ .fa{
+    color: aquamarine;
+   
+    
+}
+.image1{
+    border-radius: 47px;
+}
+
+
+.create1{
+    padding: 20px;
+    
+}

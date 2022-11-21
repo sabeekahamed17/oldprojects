@@ -1,0 +1,98 @@
+.story{
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba(0,0,0, .1);
+    background-color: rgba($white-color, .6);
+    border-radius: 3px;
+    padding: 6rem;
+    padding-left: 9rem;
+    font-size: 16px;
+    transform: skewX(-12deg);
+    
+
+    // & > * {
+    // transform: skewX(12deg);
+
+    // }
+
+    &__shape {
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        // background-color: orangered;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transform: translateX(-3rem) skewX(12deg);
+        position: relative;
+    }
+
+    &__img {
+        // width:100%;
+        height: 100%;
+        transform: translate(-4rem) scale(1.4);
+        backface-visibility: hidden;
+        transition: all .5s;
+    }
+
+    &__text{
+    transform: skewX(12deg);
+    }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $white-color;
+        text-transform: uppercase;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
+
+    &:hover &__caption{
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img{
+        transform: translate(-4rem) scale(1);
+        filter: blur(3px) brightness(80%);
+
+    }
+}
+
+
+@media only screen and (max-width: 56.25em) {
+    .story {
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
+    }
+}
+
+@media only screen and (max-width: 37.5em) {
+    .story {
+        -webkit-transform: skewX(0);
+        transform: skewX(0);
+    }
+}
+
+@media only screen and (max-width: 37.5em) {
+    .story__shape {
+        -webkit-transform: translateX(-3rem) skewX(0);
+        transform: translateX(-3rem) skewX(0);
+    }
+}
+
+
+@media only screen and (max-width: 37.5em) {
+    .story__text {
+        -webkit-transform: skewX(0);
+        transform: skewX(0);
+    }
+}

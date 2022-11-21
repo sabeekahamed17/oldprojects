@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(67, 151, 119);
+  
+}
+h1{
+    color: $primary-color;
+ }
+
+
+h4{
+    background-color: $color;
+}
+
+.mk{
+    @include linearBgImage("https://images.unsplash.com/photo-1656546543427-46d17b70a149?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80");
+}
+

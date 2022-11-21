@@ -1,0 +1,3 @@
+@function alert-col($nirmal){
+    @return map-get($alert-col, $nirmal)
+}

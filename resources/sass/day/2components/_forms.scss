@@ -1,0 +1,12 @@
+.error{
+    padding: 10px;
+    margin-bottom: 10px;
+
+    &-net{
+        @extend .error;
+        background-color: aqua;
+    }
+}
+
+
+// 

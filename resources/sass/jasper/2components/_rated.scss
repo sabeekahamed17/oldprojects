@@ -1,0 +1,55 @@
+#rating{
+    padding: 80px 4%;
+    z-index: 0;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#000),to(#121826));
+    background-image: linear-gradient(180deg,#000,#121826);
+}
+
+.content-2 {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.content-3{
+    color: #d4dce5;
+    font-size: 20px;
+    line-height: 1.25em;
+    font-weight: 400;
+}
+
+.imgcard{
+    width: 50px;
+    height: 50px;
+    border: 1px #d4dce5;
+    border-radius: 100px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.ratingcards{
+    border-radius: 10px;
+    color: #292929;
+    font-size: 14px;
+    height: 20rem;
+}
+
+// .starimg{
+//     width: 5rem;
+// }
+
+
+.textcolor{
+    color: #868f97;
+}
+
+.sticky{
+    position: sticky;
+    top: 190px;
+}
+
+
+
+.border1{
+    border-top: 1px solid #292929;
+    color: black;
+}

@@ -1,0 +1,58 @@
+h1 {
+    color: rgb(102, 45, 175);
+}
+body{
+    background-color: darkgrey;
+}
+p {
+    background-color: yellow;
+    font-size: 25px;
+}
+input {
+    border: 2px solid red;
+}
+h2 {
+    color: orange;
+}
+li{
+    color: blue;
+}
+.a{
+    background-color: white;
+}
+#hello{
+    border: 2px solid blue;
+    
+}
+input[type="text"]
+{
+    background-color: grey;
+}
+.b p{
+    background-color: pink;
+}
+span p{
+    border: 5px solid white;
+}
+em {
+    color: white;
+    font-size: 20px;
+}
+input:checked
+{
+    margin-left:50px;
+}
+label{
+    text-transform: uppercase;
+}
+#hello:first-letter {
+    color:green;
+    font-size: 100px;
+
+}
+h1:hover{
+    color: blue;
+}
+a:visited{
+    color: rgb(43, 106, 184);
+}

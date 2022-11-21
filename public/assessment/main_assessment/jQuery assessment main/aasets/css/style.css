@@ -1,0 +1,45 @@
+.container{
+    font-family: Cursive;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 20px;
+    background-color: rgb(91, 195, 209);
+}
+.btn{
+    float: right;
+}
+h1{
+   font-style: italic;
+   text-align: center;
+}
+h2{
+    text-align: right;
+    padding: 20px; 
+    font-style: italic bold;
+}
+td{
+    font-weight: bold;
+    font-style: italic bold; 
+}
+b{
+    text-align: center;
+    font-size: large;
+}
+li{
+    font-size: large;
+}
+label{
+    padding-bottom: 30px;
+    padding-left: 150px;
+    margin: 10px;
+    margin-left: 5px;
+}
+#untik{
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#list{
+    color: green;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+

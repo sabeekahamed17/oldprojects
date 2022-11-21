@@ -1,0 +1,15 @@
+p{
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: 800;
+    border-bottom: 3px solid #9e2929;
+    width: 30%;
+}
+
+img{
+     padding: 6px;
+    width: 5cm;
+     float: inline-start;
+    height: 3cm;
+}

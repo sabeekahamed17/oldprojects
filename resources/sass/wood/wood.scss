@@ -1,0 +1,225 @@
+.row{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+$primary:#eee8df;
+
+
+.navbar{
+    background-color: $primary;
+}
+
+body{
+    background-color: $primary;
+    font-family: Reem Kufi ;
+}
+.demo-body{
+    
+    }
+    
+    // .line-wrapper{
+    //      height: 200px;
+    //     background: black;
+    //     width: 2px;
+    //     height: 25%;
+    //     position: relative;
+    //  }
+     
+     .line-wrapper .word{
+
+        position: absolute;
+        // height: 500px;
+        background: $primary;
+        top: 50%;
+        // transform: translate(52%,-50%);
+        right: 50%;  
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 13px;
+      }
+      
+    .line-wrapper .word.vertical{
+       writing-mode: tb-rl;
+    }
+    
+.display-3{
+    font-weight: 700;
+}
+.vl {
+    border-left: 2px solid;
+    height: 200px;
+    width: 50px;
+  }
+  .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+  }
+.logo{
+    width: 40px;
+}
+
+.navbar-brand{
+    font-weight: 700;
+}
+.hov::after {
+    content: '';
+    display: inline-flex;
+    width: 0px;
+    height: 2px;
+    background: #fec400;
+    transition: 0.4s
+}
+
+.hov:hover::after {
+    width: 100%
+}
+
+.para{
+    text-transform: capitalize;
+    margin-top: 120px;
+    padding-left: 120px;
+}
+
+.btn-outline-info{
+   background-color: $primary;
+}
+
+.img2{
+    width: 400px;
+    height: 350px;
+    margin-top: -280px;
+    margin-left: 650px;
+}
+.icon{
+    fill: rgb(0, 0, 0);
+    width: 50px;
+    height: 50px;
+    // position: relative;
+    // min-height: 200px;
+}
+.border1{
+    border-left: px solid #e9c081;
+    height: 104px;
+    // width: 5px;
+}
+
+.img3{
+     position: absolute;
+     height:500px;
+     width: 1400px;
+}
+.hand{
+   position: relative;
+   margin-left: 1200px;
+   margin-top: 150;
+}
+.card1{
+    left: 1200px;
+    margin-top: 50px;
+    background-color: rgb(28, 101, 101)
+}
+.icon1{
+    fill: rgb(129, 100, 29);
+    height: 70px;
+    margin-bottom: 20px;
+}
+// .img3{
+//     width: 75%;
+//     height: 80%;
+//     margin-bottom: 20px;
+// }
+.last{
+    font-weight: 400;
+    font-size: larger;
+}
+
+.code{
+    height: 100px;
+}
+#logo{
+    background-color: #29231a;
+
+}
+input ,.form-control{
+    background: #eee8df;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #29231a;
+    font-size: 1rem;
+    color: black;
+    max-width: 400px;
+    width: 100%;
+    height: 50px;      
+  }
+
+  .icon3{
+    fill: #866027;
+    width: 50px;
+    height: 50px;
+  }
+  #video-play{
+    position: relative;
+    // min-height: 200px;
+    // background-attachment: fixed;
+    // background-repeat: no-repeat;
+    // text-align: center;
+}
+
+.icon7{
+    position: absolute;
+    left: 35%;
+    bottom: 40%;
+    fill: #fff;
+    opacity: 0.5;
+    
+}
+
+@media (max-width: 575.98px) { 
+
+    .img3{
+        display: none;
+        
+    }
+ }
+
+
+
+
+// .dark-overlay{
+//     position: absolute;
+//     top: 100%;
+//     left: 100%;
+//     width: 100%;
+//     height: 100%;
+//     background: rgba(0,0,0, 0.7);
+// }
+// #home-heading{
+//     position: relative;
+//     min-height: 200px;
+//     background-image: url(/resources/images/wood/bg5.jpg);
+//     background-position: center;
+//     background-attachment: fixed;
+//     background-repeat: no-repeat;
+//     text-align: center;
+//     color: aliceblue;
+// }
+
+
+
+
+
+
+
+
+
+
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '@fortawesome/fontawesome-free/scss/solid.scss';
+@import '@fortawesome/fontawesome-free/scss/regular.scss';
+
+@import '@fortawesome/fontawesome-free/scss/brands.scss';

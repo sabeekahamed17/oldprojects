@@ -1,0 +1,149 @@
+html{
+   scroll-behavior: smooth;
+   
+}
+
+body{
+   //  scroll-behavior: smooth;
+    background-color: black;
+    font-family: Inter,sans-serif;
+   //  ::selection {
+   //    color: #00f0ff;
+   //    background: rgb(216, 152, 152);
+   //  }
+ }
+
+ .container {
+   width: 99%;
+   max-width: 1260px;
+   margin-right: auto;
+}
+
+ .content-1{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+ }
+
+.heading-1{
+   padding-top: 110px;
+ }
+
+
+ .gradient{
+   font-size: 70px;
+    font-weight: 700;
+    line-height: 1.2;
+    background-image: linear-gradient(45deg,#ff61d3 10%,#b318ff 36%,#b318ff 47%,#30b6ff 67%,#00f0ff 76%,#1e43ff);
+    background-clip: text;
+    color: transparent;
+ }
+
+ .paragraph{
+    margin-left: 200px;
+    margin-right: 200px;
+    color: #d4dce5;
+
+ }
+
+ .btn-1{
+    background-color: #fff;
+    &:hover{
+        color: #1e43ff;
+    }
+ }
+
+ .type-text{
+   height: 75px;
+ }
+
+ .robot{
+      
+      // bottom: 0;
+      // z-index: 5;
+      // // margin-top: 140px;
+      // margin-right: auto;
+      // margin-left: 280px;
+      // justify-content: space-around;
+      // width: 100%;
+
+      position: relative;
+      bottom: 0;
+      z-index: 5;
+      margin-right: auto;
+      margin-left: auto;
+      
+ }
+
+ img{
+   border: 0;
+   vertical-align: middle;
+   display: inline-block;
+   max-width: 100%;
+ }
+
+ .topicons{
+  
+   position: absolute;
+   top: -34px;
+   right: 0;
+   bottom: 0;
+   width: 80%;
+   left: 10%;
+ }
+
+
+ .video-content-1{
+   z-index: 10;
+    overflow: visible;
+    width: 100%;
+    padding: 4px;
+    justify-content: center;
+    align-items: stretch;
+    border-radius: 2px;
+    background-image: -webkit-gradient(linear,left top,right top,color-stop(20%,#ff61d3),color-stop(40%,#b318ff),color-stop(60%,#b318ff),color-stop(80%,#00f0ff));
+    background-image: linear-gradient(90deg,#ff61d3 20%,#b318ff 40%,#b318ff 60%,#00f0ff 80%);
+    box-shadow: 21px 21px 30px 0 rgb(0 0 0 / 90%);
+ }
+
+
+
+ .letter-space{
+   font-size: 14px;
+    letter-spacing: 3px;
+ }
+
+ .winner{
+  justify-content: flex-start;
+ }
+
+ .winner2{
+  justify-content: center;
+ }
+
+ .winner1{
+    padding-top: 80px;
+    width: 90%;
+ }
+
+ h3{
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.5em;
+    line-height: 1.25em;
+    font-weight: 550;
+ }
+
+ .padding-1{
+  width: 29% !important;
+    justify-content: space-between;
+    padding: 8px;
+ }
+
+ .img-winner{
+   width: 111px;
+ }
+
+ .heading-3{
+   font-size: 30px;
+ }

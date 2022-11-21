@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color: rgb(179, 97, 117);">
+    <br>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand"><i class="fa fa-list" aria-hidden="true"></i> TO-DO</a>
+            <form class="d-flex form1">
+                <button class="btnsub" type="submit1"><i class="fa fa-plus-square-o btn1"
+                        aria-hidden="true"></i></button>
+                <button class="btnsub" type="submit2"><i class="fa fa-refresh btn2" aria-hidden="true"></i></button>
+                <button class="btnsearch" type="submit3"><i class="fa fa-search btn3" aria-hidden="true"></i></button>
+            </form>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container">
+        <div class="col-12">
+            <div class="search-container">
+                <form class="d-flex">
+                    <input type="text" class="myInput" id="in1" placeholder="Task name" aria-label="Username">
+                    <input type="date" class="form-control Input" id="in2" aria-label="Username">
+                    <button id="btn1"><i class="fa fa-check" aria-hidden="true"></i></button>
+                    <button id="btn2"><i class="fa fa-eraser" aria-hidden="true"></i></button>
+                </form>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class=" d-flex col-lg-12 div1">
+                <table class="table table-bordered" id="myTable">
+                    <thead id="th3">
+                        <th class="task">
+                            <i class="fa fa-list tr" aria-hidden="true"></i> Task List
+                        </th>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="d-flex col-lg-12">
+                <div class="col-lg-5">
+                    <table class="table table-bordered" id="th1">
+                        <thead>
+                            <th class="com1"><i class="fa fa-check" aria-hidden="true"></i> Completed Tasks</th>
+                        </thead>
+                        <tbody id="td1">
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-lg-2">
+                </div>
+                <div class="col-lg-5">
+                    <table class="table table-bordered" id="th2">
+                        <thead>
+                            <th class="old1"><i class="fa fa-clock-o" style="font-size: 25px;" aria-hidden="true"></i>
+                                Old Task</th>
+                        </thead>
+                        <tbody id="old">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class=" d-flex col-lg-12 div1">
+                <table class="table table-bordered" id="mytable">
+                    <thead id="th1">
+                        <tr>
+                            <th class="pro"><i class="fa fa-battery-full" aria-hidden="true"></i>&puncsp; Progresss
+                                <br>You have Completed 0%
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+     <script src="./assets/js/script.js"></script> 
+
+</body>
+
+</html>

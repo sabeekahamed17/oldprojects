@@ -1,0 +1,24 @@
+// .btn{
+//     background-color: rgb(188, 140, 140);
+//     text-align: center;
+//     color: #082743;
+// }
+
+
+
+// @mixin theme-colors($light-theme: true) {
+//   @if $light-theme {
+//     background-color: $light-background;
+//     color: $light-text;
+//   } @else {
+//     background-color: $dark-background;
+//     color: $dark-text;
+//   }
+// }
+
+// .banner {
+//   @include theme-colors($light-theme: true);
+//   body.dark & {
+//     @include theme-colors($light-theme: false);
+//   }
+// }

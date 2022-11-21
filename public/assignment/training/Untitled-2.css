@@ -1,0 +1,35 @@
+body{
+    background-color: blanchedalmond;
+}
+
+
+#top {
+    background-color: black;
+    height: 119px;
+    width: 100%;
+    margin: -1px;
+}
+img{
+  
+    margin: -9px;
+    padding: 9px;
+    height: 100px;
+}
+ul{
+    padding-bottom: 10px;
+}
+
+ul li{
+    
+display: inline;
+float: right;
+flex-direction: row;
+
+
+}
+ul li a{
+    color: white;
+margin-left: 10px;
+list-style: none; 
+text-decoration: none;
+}

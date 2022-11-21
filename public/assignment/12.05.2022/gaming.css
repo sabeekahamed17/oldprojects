@@ -1,0 +1,26 @@
+body{
+    background-color: #232323;
+ }
+ 
+  .square{
+     padding-bottom: 30%;
+     width: 30%;
+     background-color: purple;
+     float: right;
+     margin: 1.60%;
+     border-radius: 10%;
+     
+ 
+ }
+ h1{
+     color: aliceblue;
+ }
+ 
+ .container{
+     margin: 0 auto;
+     max-width: 600px;
+ }
+ 
+ span{
+     color: beige;
+ }

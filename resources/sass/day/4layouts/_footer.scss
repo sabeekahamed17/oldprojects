@@ -1,0 +1,24 @@
+.bg-color{
+    @include box1;
+}
+.footer1{
+    @include hovercard1;
+    
+}
+
+.colorr{
+    color: $navlink;
+}
+
+.client{
+    @include hov8;
+}
+
+
+#myBtn {
+   @include top;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }

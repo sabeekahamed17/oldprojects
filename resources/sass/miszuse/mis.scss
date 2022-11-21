@@ -1,0 +1,116 @@
+.image
+{
+    width: 50px;
+}
+$primary:#3292a6;
+$primary-overlay:rgba(50,146,166,0.8);
+body
+{
+    margin-top: 105px;
+
+}
+.navbar
+{
+    box-shadow: 2px 2px 5px $primary;
+    opacity: 0.9;
+    background: #fff;
+    .nav-item{
+        font-size: 1.4rem;
+        padding-right: 1.4rem;
+    }
+}
+
+#showcase
+{
+    position:relative;
+    // background-image: url(./../../images/misimage/img1.avif);
+    background-image: url("/images/misimages/spring.jpg");
+    min-height: 600px;
+    background-repeat: no-repeat;
+
+
+
+    .primary-overlay{
+        background:$primary-overlay;
+        position:absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+  .info-header{
+    width: 50%;
+    margin: auto;
+    border-bottom: 1px #3292a6 solid;
+  }
+
+//   #author{
+    .fab{
+        color: #3292a6;
+        font-size: 2rem;
+    }
+
+
+  .card1{
+
+ &:hover {
+    background-color: #3292a6;
+    color: #fff;
+    .fab{
+        color: #fff;
+        font-size: 2rem;
+    }
+  }
+}
+
+.icon{
+    fill: rgb(157, 26, 26);
+    height: 50px;
+}
+// }
+
+.age{
+    margin-top: -50px;
+}
+
+
+@media(max-width:768)
+{
+    #showcase{
+        min-height: 500px;
+        h1{
+            font-size: 4rem;
+        }
+    }
+}
+
+
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '@fortawesome/fontawesome-free/scss/solid.scss';
+@import '@fortawesome/fontawesome-free/scss/regular.scss';
+@import '@fortawesome/fontawesome-free/scss/brands.scss';

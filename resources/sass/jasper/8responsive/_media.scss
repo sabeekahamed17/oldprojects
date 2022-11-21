@@ -1,0 +1,250 @@
+
+    @media only screen and (max-width: 480px)
+    {
+        .card{
+            // width: 100%;
+            // display: none;
+        }
+    }
+    @media only screen and (max-width: 480px){
+        h1 {
+        font-size: 2em !important;
+        }
+    }
+
+    @media only screen and (max-width: 480px){
+        .paragraph {
+        margin-left: 0px;
+        margin-right: 0px;
+        }
+    }
+
+    @media only screen and (max-width: 480px){
+        .type-text {
+        height: 30px;
+        }
+
+        iframe {
+            height: 240px !important;
+        }
+
+        .ratingtop{
+            text-align: center;
+        }
+
+        .footercode{
+            text-align: center;
+        }
+        .footertext{
+            margin-top: 25px;
+        }
+        .img-none{
+            display: none;
+        }
+        .video-demo {
+            height: 100vh;
+        }
+
+        .topicons{
+            margin-top: 85px;
+        }
+        .hiring,
+        .careers{
+            display: none;
+        }
+        .padding-1 {
+            width: 28% !important;
+        }
+        .heading-3 {
+            font-size: 22px;
+        }
+        // .heading-1{
+        //     padding-top: 0px;
+        // }
+    }
+
+
+    @media screen and (max-width: 990px) and (min-width: 500px){
+         h1 {
+             font-size: 3em !important;
+        }
+
+        h2{
+            font-size: 1.5em;
+        }
+
+        .paragraph{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .type-text {
+            height: 40px;
+            }
+
+        iframe {
+            height: 25rem;
+        }
+
+        .ratingtop{
+            text-align: center;
+        }
+
+        .footercode{
+            text-align: center;
+        }
+
+        .footertext{
+            margin-top: 25px;
+        }
+
+        .card-text1 {
+            // font-weight: 300;
+            font-size: 16px;
+            // margin-bottom: 0 !important;
+        }
+
+        .card-title1 {
+            font-size: 1.3rem;
+        }
+
+        .images2 {
+            width: 25px;
+            margin-bottom: 10px;
+        }
+        .card-body-2{
+            padding: 0 !important;
+        }
+
+        .card-2{
+            height: 15rem;
+        }
+        .jasperheading{
+            font-size: 2rem !important;
+        }
+        .content-2{
+            font-size: 20px;
+        }
+        .video-demo {
+            height: 125vh;
+        }
+
+        .robot{
+            height: 400px;
+        }
+        .hiring,
+        .careers{
+            display: none;
+        }
+        .padding-1 {
+            width: 16% !important;
+        }
+        // .heading-1 {
+        //     padding-top: 0px;
+        // }
+        
+    }
+
+    @media only screen and (min-width: 991px){
+        .hr-none {
+       display: none;
+        }
+
+        iframe {
+            height: 640;
+        }
+    }
+
+
+    @media only screen and (max-width: 1235px) and (min-width: 994px){
+        .card-title1 {
+            font-size: 1.6rem;
+        }
+
+        .card-text1 {
+            font-size: 20px;
+        }
+        .card-2{
+            height: 21rem;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // media queiry manager
+
+    /*
+     0 - 600px:   phone
+     600-900px:   tablets portrait
+    900-1200px:   tablets landscape
+
+    [1200 - 1800px] is where our normal style apply
+
+    1800px + :   big desktop
+    */
+
+
+    @mixin  respond-phone {
+        @media (max-width: 600x) {
+            @content
+        };
+    }
+
+
+
+    /*
+        $breakpoit argument choices:
+         - phone
+         - tab-port
+         -tab-land
+         -big-desktop
+    */
+    @mixin respond($breakpoint) {
+        @if $breakpoint == phone {
+            @media (max-width: 600px) {
+                @content
+            };
+        }
+        @if $breakpoint == tab-port {
+            @media (max-width: 900px) {
+                @content
+            };
+        }
+        @if $breakpoint == tab-land {
+            @media (max-width: 1200px) {
+                @content
+            };
+        }
+        @if $breakpoint == big-desktop {
+            @media (min-width: 1200px) {
+                @content
+            };
+        }
+    }

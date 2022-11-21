@@ -1,0 +1,29 @@
+.icon1{
+color: $navlink;
+// @include iconbox;
+
+    background-color:rgb(183, 0, 0);
+    color: aliceblue;
+    padding: 10px;
+    box-shadow: -5px -5px rgb(255, 159, 159);
+   @include iconhover;
+}
+.icon5{
+    color: $navlink;
+}
+
+.box{
+    @include box1;
+}
+
+.icon2{
+    border-radius: 47px;
+    border: 2px dotted $navlink;
+    color: $navlink;
+    padding: 20px;
+}
+
+.icon3{
+    color: $navlink;
+}
+

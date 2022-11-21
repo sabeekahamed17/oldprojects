@@ -1,0 +1,324 @@
+.home-heading{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+ *{
+   scroll-behavior: smooth;
+   margin: 0;
+   padding: 0;
+    box-sizing: border-box;
+    ::selection {
+        color: $white-color;
+        background: $color-primary-dark;
+    }
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family:"lato" , sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: $grey-color;
+    padding: 3rem;
+}
+@media only screen and (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+}
+
+@media only screen and (max-width: 56.25em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media only screen and (min-width: 112.5em) {
+    html {
+        font-size: 75%;
+    }
+}
+
+
+@media only screen and (max-width: 56.25em) {
+    body {
+        padding: 0;
+    }
+}
+.header{
+    height: 95vh;
+    background-image:linear-gradient(to right bottom,
+    rgba(126, 213, 111, 0.8),
+    rgba(40, 180, 133, 0.8)),
+     url("/images/natours/hero.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0,100% 0,100% 80vh, 0 100%);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+only screen and (min-width: 125em) {
+    .header {
+        background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url(/images/natours/hero.jpg);
+        background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(/images/natours/hero.jpg);
+    }
+}
+
+@media only screen and (max-width: 37.5em) {
+    .header {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
+}
+
+.logo-box{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo{
+    height: 35px;
+
+}
+
+.heading-primary{
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 60px;
+}
+.text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.heading-primary-main{
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    // animation-iteration-count: 3;
+
+    // animation-delay: 3s;
+}
+
+// @media only screen and (max-width: 37.5em) {
+//     .heading-primary-main {
+//         letter-spacing: 1rem;
+//         font-family: 5rem;
+//     }
+// }
+
+@media (max-width: 37.5em) 
+{
+    .heading-primary-main 
+    {
+      letter-spacing: 1rem;
+      font-size: 5rem; 
+    } 
+}
+
+
+.heading-primary-sub{
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 15px;
+    animation: moveInRight 1s ease-out;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .heading-primary-sub {
+        letter-spacing: .5rem;
+    }
+}
+
+@keyframes moveInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInButton {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.btn{
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px 40px;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all .2s;
+        position: relative;
+        font-size: 16px;
+
+        border: none;
+        cursor: pointer;
+    }
+
+
+    &:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0,0,0, .2);
+
+        &::after{
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    &:active,
+    &:focus{
+        outline: none;
+        // box-shadow: 0 5px 10px rgba(0,0,0, .2);
+        transform: translateY(-1px);
+        box-shadow: 0.5rem 1rem rgba($color-black, .2)
+    }
+
+    &-white {
+        background-color: #fff;
+        color: #777;
+        text-align: center;
+        &::after{
+            background-color: $white-color;
+        }
+    }
+
+    &--green {
+        background-color: $color-primary;
+        color: $white-color;
+        text-align: center;
+        &::after{
+            background-color: $color-primary;
+        
+        }
+    }
+
+    &::after{
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+
+    &-white::after{
+        background-color: whitesmoke;
+
+    }
+
+
+    &:hover::after{
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+
+    &-animated {
+        animation: moveInButton .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    } 
+
+    &-text{
+        &:link,
+        &:visited {
+            font-size: 1.6rem;
+            color: $color-primary;
+            display: inline-block;
+            text-decoration: none;
+            border-bottom: 1px solid $color-primary;
+            padding: 3px;
+            transition: all .2s;
+
+        }
+        &:hover {
+            background-color: $color-primary;
+            color: $white-color;
+            box-shadow: 0 1rem 2rem rgba($color-black, .15);
+            transform: translateY(-2px);
+        }
+        &:active {
+            box-shadow: 0 0.5rem 1rem rgba($color-black, .15);
+            transform: translateY(0);
+        }
+    }
+}
+
+.section-features{
+    padding: 20rem 0;
+    background-image: linear-gradient(to right bottom,
+        rgba(126, 213, 111, 0.8),
+        rgba(40, 180, 133, 0.8)),
+        url(../../../images/natours/nat-4.jpg);
+        background: cover;
+
+        transform: skewY(-7deg);
+        margin-top: -10rem;
+
+
+        & > * {
+            transform: skewY(7deg);
+        }
+  }
+
+  .section-tours {
+    // background-color: $grey-color;
+    padding: 5rem 0;
+  }
+

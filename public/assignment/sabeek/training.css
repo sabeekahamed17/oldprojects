@@ -1,0 +1,15 @@
+.web {
+    border: 1px solid;
+    background-color: aqua;
+    list-style: 10px;
+
+}
+li {
+    color: red;
+}
+body {
+    background-color: blanchedalmond;
+}
+span {
+   background-color: rgb(221, 73, 15);
+}
